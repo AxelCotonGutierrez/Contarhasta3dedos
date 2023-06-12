@@ -1,9 +1,9 @@
 // Axel Cotón Gutiérrez Copyright 2023
   // Generar imágenes aleatorias
   const images = [
-    "https://raw.githubusercontent.com/AxelCotonGutierrez/Contarhasta3dedos/master/img/uno.JPG",
-    "https://raw.githubusercontent.com/AxelCotonGutierrez/Contarhasta3dedos/master/img/dos.JPG",
-    "https://raw.githubusercontent.com/AxelCotonGutierrez/Contarhasta3dedos/master/img/tres.JPG"
+    "https://raw.githubusercontent.com/AxelCotonGutierrez/Contarhasta3dedos/master/img/uno.png",
+    "https://raw.githubusercontent.com/AxelCotonGutierrez/Contarhasta3dedos/master/img/dos.png",
+    "https://raw.githubusercontent.com/AxelCotonGutierrez/Contarhasta3dedos/master/img/tres.png"
   ];
 
    let score = 0; // Contador de respuestas correctas
