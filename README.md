@@ -1,4 +1,7 @@
-# Contarhasta3dedos
+# Contar hasta tres usando los dedos de la mano.
+
+![Juego de la dedos](https://axelcotongutierrez.github.io/learningmathematicas/assets/images//posts/Contar3/jcontar3de.jpg)
+
 Juego para Infantil para aprender a contar hasta tres usando los dedos de la mano.
 
 Puedes probar el juego en esta url:
