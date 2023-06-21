@@ -117,7 +117,7 @@ h1 {
 @media (max-width: 768px) {
   .container,
   .container2 {
-    max-width: 95%; /* Ancho completo en dispositivos móviles */
+    max-width: 90%; /* Ancho completo en dispositivos móviles */
   }
 
   .guess-button {
