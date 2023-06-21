@@ -2,6 +2,8 @@
 
 ![Juego de la dedos](https://axelcotongutierrez.github.io/learningmathematicas/assets/images//posts/Contar3/jcontar3de.jpg)
 
+Dentro del blog: https://axelcotongutierrez.github.io/learningmathematicas/
+
 Juego para Infantil para aprender a contar hasta tres usando los dedos de la mano.
 
 Puedes probar el juego en esta url:
