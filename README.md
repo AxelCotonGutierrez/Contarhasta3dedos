@@ -1,6 +1,6 @@
 # Contar hasta tres usando los dedos de la mano.
 
-![Juego de la dedos](https://axelcotongutierrez.github.io/learningmathematicas/assets/images//posts/Contar3/jcontar3de.jpg)
+![Juego de la dedos](https://axelcotongutierrez.github.io/learningmathematicas/assets/images//posts/02JContar3/jcontar3de.jpg)
 
 Dentro del blog: https://axelcotongutierrez.github.io/learningmathematicas/
 
