@@ -10,6 +10,10 @@ Puedes probar el juego en esta url:
 
 https://axelcotongutierrez.github.io/Contarhasta3dedos/
 
+Puedes ver la expliación el código aquí:
+
+https://www.youtube.com/watch?v=UzPo70jhfXU
+
 ¡Bienvenido al emocionante juego de contar dedos! ¿Estás listo para poner a prueba tus habilidades matemáticas mientras te diviertes? En este desafío, pondremos a prueba tu destreza para contar hasta tres utilizando los dedos de una mano.
 
 El juego es simple pero desafiante. En cada turno, aparecerá una mano con un número aleatorio de dedos extendidos: puede ser uno, dos o incluso tres dedos. Tu objetivo es ser lo suficientemente rápido y preciso para pulsar el botón correspondiente al número de dedos que veas en la mano.
