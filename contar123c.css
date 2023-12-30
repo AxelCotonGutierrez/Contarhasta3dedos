@@ -129,32 +129,22 @@ h1 {
 
 /* Nuevo código para redimensionar imágenes en dispositivos móviles */
 
-/* Visión en dispositivos móviles */
 @media (max-width: 768px) {
   .container, .container2 {
     max-width: 80%; /* Ancho completo en dispositivos móviles */
     flex-wrap: wrap; /* Permitir envolver las imágenes en múltiples líneas */
   }
 
-  .container .game-image {
-    flex-basis: 25%; /* Ajustar según las necesidades */
-    max-width: 25%; /* Ajustar según las necesidades */
-    margin: 1%; /* Espacio entre las imágenes */
-  }
-
-  .container .game-image:only-child {
-    flex-basis: 60%; /* Ajustar el tamaño de la única imagen */
-    max-width: 60%; /* Ajustar el tamaño de la única imagen */
-  }
-
   .guess-button {
-      width: 50px;
-      height: 50px;
-      font-size: 25px;
-      margin-bottom: 10px;
-  }
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 
-  .pregunta {
-      font-size: 30px;
-  }
+.pregunta {
+    font-size: 30px;
+}
+
+
 }
