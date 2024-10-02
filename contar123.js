@@ -61,8 +61,8 @@ function generateQuestion() {
       playAudio(intentarAudio);
     }
 
-    // Incrementar el contador cuando se acaben las 5 preguntas
-    incrementarContador();
+      // Incrementar el contador en Firebase
+  incrementarContadorFirebase();  // Usamos la función renombrada
 
     // Mostrar botón "Volver a jugar"
     const playAgainButton = document.querySelector("#play-again-button");
@@ -146,11 +146,14 @@ function restartGame() {
 }
 
 // Función para incrementar el contador del juego en Firebase
-function incrementarContador() {
+function incrementarContadorFirebase() {
   const juegoId = "3dedos";  // Identificador del juego "3dedos"
+  
+  console.log("Intentando incrementar el contador para:", juegoId);  // Mensaje para verificar que se llama la función
 
   const contadorRef = firebase.database().ref(`jugadores/${juegoId}/contador`);
   contadorRef.transaction(function(contador) {
+    console.log("Valor actual del contador en Firebase:", contador);  // Mensaje para mostrar el valor del contador actual
     return (contador || 0) + 1;
   });
 }
