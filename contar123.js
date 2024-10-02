@@ -145,29 +145,30 @@ function restartGame() {
   generateQuestion();
 }
 
+
 // Función para incrementar el contador del juego en Firebase
 function incrementarContadorFirebase() {
-  const juegoId = "3dedos";  // Identificador del juego "3dedos"
+  const ruta = "Infantil/Matemáticas/Contar/3";  // Ruta definida para la categoría y tema
+  const juegoId = "3dedos";  // Identificador del juego
   
-  console.log("Intentando incrementar el contador para:", juegoId);  // Mensaje para verificar que se llama la función
-
-  const contadorRef = firebase.database().ref(`jugadores/${juegoId}/contador`);
+  const contadorRef = firebase.database().ref(`${ruta}/${juegoId}/contador`);
   contadorRef.transaction(function(contador) {
-    console.log("Valor actual del contador en Firebase:", contador);  // Mensaje para mostrar el valor del contador actual
     return (contador || 0) + 1;
   });
 }
 
 // Función para mostrar el contador actual en la página
 function mostrarContador() {
-  const juegoId = "3dedos";  // Usar el mismo identificador para mostrar el contador
+  const ruta = "Infantil/Matemáticas/Contar/3";  // Ruta definida para la categoría y tema
+  const juegoId = "3dedos";  // Identificador del juego
 
-  const contadorRef = firebase.database().ref(`jugadores/${juegoId}/contador`);
+  const contadorRef = firebase.database().ref(`${ruta}/${juegoId}/contador`);
   contadorRef.on('value', (snapshot) => {
     const contador = snapshot.val();
     document.getElementById('contador').innerText = `Han jugado ${contador || 0} veces.`;
   });
 }
+
 
 // Mostrar el contador al cargar la página
 mostrarContador();
