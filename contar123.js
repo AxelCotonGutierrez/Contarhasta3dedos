@@ -61,8 +61,8 @@ function generateQuestion() {
       playAudio(intentarAudio);
     }
 
-      // Incrementar el contador en Firebase
-  incrementarContadorFirebase();  // Usamos la función renombrada
+    // Incrementar el contador en Firebase usando el script externo
+    incrementarContadorFirebase("Infantil/Matemáticas/Contar/3", "3dedos");
 
     // Mostrar botón "Volver a jugar"
     const playAgainButton = document.querySelector("#play-again-button");
@@ -145,33 +145,8 @@ function restartGame() {
   generateQuestion();
 }
 
-
-// Función para incrementar el contador del juego en Firebase
-function incrementarContadorFirebase() {
-  const ruta = "Infantil/Matemáticas/Contar/3";  // Ruta definida para la categoría y tema
-  const juegoId = "3dedos";  // Identificador del juego
-  
-  const contadorRef = firebase.database().ref(`${ruta}/${juegoId}/contador`);
-  contadorRef.transaction(function(contador) {
-    return (contador || 0) + 1;
-  });
-}
-
-// Función para mostrar el contador actual en la página
-function mostrarContador() {
-  const ruta = "Infantil/Matemáticas/Contar/3";  // Ruta definida para la categoría y tema
-  const juegoId = "3dedos";  // Identificador del juego
-
-  const contadorRef = firebase.database().ref(`${ruta}/${juegoId}/contador`);
-  contadorRef.on('value', (snapshot) => {
-    const contador = snapshot.val();
-    document.getElementById('contador').innerText = `Han jugado ${contador || 0} veces.`;
-  });
-}
-
-
-// Mostrar el contador al cargar la página
-mostrarContador();
+// Mostrar el contador al cargar la página usando el script externo
+mostrarContador("Infantil/Matemáticas/Contar/3", "3dedos");
 
 // Llamar a la función para iniciar el juego
 generateQuestion();
